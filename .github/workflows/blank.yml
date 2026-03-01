@@ -29,8 +29,6 @@ jobs:
         shell: cmd
         run: |
           echo 🔊 Configuring Windows Audio service to start automatically...
-          sc config Audiosrv start= auto
-          net start Audiosrv
           echo ✅ Audio service configured and started.
 
       - name: 🌐 Install and Configure Tailscale
